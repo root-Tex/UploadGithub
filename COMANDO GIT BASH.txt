@@ -1,0 +1,214 @@
+CURSO: https://www.youtube.com/watch?v=mBYSUUnMt9M
+
+COMANDOS PARA GIT BASH
+*****************************************
+
+cd -> change directory
+
+if the name of directory is large, i am put the word in middle the "name the dir"
+cd "Android Studio"
+
+Recommend using the slash down
+
+*****************************************
+
+cd .. -> back the directory
+
+*****************************************
+
+
+rmdir --> remover directorio
+
+*****************************************
+
+clear --> limpiar pantalla
+
+****************************************
+IMPORTANT!
+
+git config --global user.name "Tex"
+git config user.name
+
+git config --global user.email "correo@gmail.com"
+git config user.email
+
+****************************************
+
+ir a documentos con cd
+
+mkdir curso_git //creamos carpeta
+
+cd curso_git // entramos en la carpeta
+*****************************************
+
+INICIALIZAR 
+
+git init
+
+(aparecera un .git al final, dentro de ello estaran las versiones)
+
+git config --global init/defaultBranch main
+
+luego borramos manualmente la carpeta .git
+
+volvemos a ejecutar el codigo "git init" y nos cambiara el nombre de la rama (master - main)
+
+*******************************************
+NOTAS
+
+HAY 3 AREAS EN GIT
+DIRECTORIO PRINCIPAL (WORKING) .git
+AREA DE PREPARACIÓN (Stating area)
+ + Creamos un Commit
+
+Repositorio (directorio)
+
+*********************************************
+git status
+
+//sirve para ver si tenemos tareas pendientes
+
+git add mi-archivo.txt
+
+//en visual stduio code cambia de U a A y en git status cambia el mensaje
+
+//ahi mismo podemos elimiar el archivo añadido de git
+
+git rm --cached mi-archivo.txt
+
+git status
+
+//el archivo se quito del commit
+
+********************************************
+
+CREAR COMMIT
+
+git commit -m "Agregar archivo de texto"
+
+//ver el hsitorial de commits
+
+git log
+
+*********************************************
+
+CREAR COMMITS PERSONALIZAEOS!!!!
+
+El archivo que se cargo .txt si realizamos modificaciones en el hara seguimiento de ello
+si modificamos algo y guardamos nos aparacere una M (MODIFICADO)
+
+
+git status
+muestra que fue fue modificado el archivo
+
+git add . //si estamos seguros que todo lo que aparece en pantalla estamos de acuerdo
+
++++++++
+git commit
+//se abrira un archivo en VC
+
+escrbimos un texto que queramos dentro del archivo
+"En este commit actualice el texto para camibar la palabra de tal a tal"
+digamos que es un comentario a lo que se hizo
+
+
+CUANDO CERRAMOS EL ARCHIVO DE LA PESTAÑA DE LA DESCRIPCION EN LA TERMINAL YA SE AGREGO
+
+//consejo: hay convenciones para poner el texto, en el encabezado se pone que se hizo
+
+***************************************************
+CAMBIAR DE E3DITOR DE TEXTO
+git config --global core.editor "code --wait"
+si quiero otro programa puedo revisar el repositorio que estan los codigos para programas
+
+***************************************************
+
+MODIFICAR EL COMMIT QUE HICE EN CUANTO AL TEXTO
+
+git commit --ammend
+
+SE ABRIRA EL COMMIT EN VC Y NUESTRO TEXTO, MODIFICAMOS Y SE ACTUALIZA
+
+***************************************************
+
+REVERTIR UN COMMIT
+
+git reset --soft HEAD~1
+git add .
+
+git commit //ejecutar y poner mensaje
+
+**************************************************
+CREAR UNA RAMA: es una linea independiente de desarrollo en el respositorio
+
+git branch version-javascript //nombre de la rama
+
+git branch // con eso podremos ver nuestras ramas
+
+***************************************************
+
+CAMBIAR DE RAMAS
+git checkout version-javascript //poner el nombre de que rama queremos cambiar
+Y LISTO SE PNE EN ESA RAMA
+
+CREAR Y CAMBIAR RAMA A LA VEZ
+
+git checkout -b version-python
+
+//crea la rama y entra a tal rama
+
+git branch y listamos las ramas
+
+************************************************
+
+CAMBIAR EL NOMBRE DE UNA RAMA
+-----MODO 1
+ir a la rama
+git checkout version-javascript
+
+git branch -m version-js
+
+//y  se cambia el nombre de la rama
+
+-----MODO 2
+desde main
+
+git branch -m version-python version-py
+
+listamos con git branch y observamos el cambio hecho
+
+**********************************************
+ELIMINAR UNA RAMA
+git branch -d version-py
+
+//y asi se borra una rama
+
+OJO ES REPOSITORIO LOCAL
+**********************************************
+
+CREAR COMMINT EN LAS RAMAS
+
+git checkout version-js
+//en la parte debajo del VC dice que rama estamos
+
+git status
+
+git add .
+
+git commit //isnertamos texto "cambiar texto a JS"
+
+
+*************************************************
+
+
+
+
+
+
+
+
+
+
+
+
+ 
